@@ -4,6 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import { motion } from "framer-motion";
+import pfpic from "../../../public/PfPic.webp"
 export default function SideSecComp() {
   return (
     <>
@@ -22,7 +23,7 @@ export default function SideSecComp() {
      <div className='flex flex-col  items-center justify-center'>
 
      <div className=' relative w-[80%] mb-10 h-[350px] md:h-[550px] lg:h-[210px]  rounded-2xl'>
-     <Image  priority loading='eager' sizes='(max-width:768px) 100vw , (max-width:1200px) 50vw , 25vw' src='/PfPic.jpeg' fill alt='img' className='object-cover rounded-2xl' />
+     <Image  priority loading='eager' sizes='(max-width:768px) 100vw , (max-width:1200px) 50vw , 25vw' src={pfpic} fill alt='img' className='object-cover rounded-2xl' />
      <h1 className='text-white text-center absolute w-[100%] text-[44px] md:text-[44px] lg:text-[44px] left-[50%] translate-x-[-50%] rotate-[-4deg] bottom-[-35] font-medium StoryScript'>Omar Khalifa</h1>
      </div>
     <div className='mb-5'>
