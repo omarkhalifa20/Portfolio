@@ -18,8 +18,8 @@ export default function Home() {
   return (
    <>
    <video className="top-0 hidden lg:block  bottom-0 left-0 right-0 w-[100%] h-[100%] object-cover   fixed z-[-15] brightness-30" src="/MainVid.webm" muted autoPlay loop></video>
-   <img className="top-0 lg:hidden block  bottom-0 left-0 right-0 w-[100%] h-[100%] object-cover   fixed z-[-15] brightness-30" src="/Background.jpg" alt="Background" />
-   <div className=" w-full  overflow-hidden h-full flex-col flex lg:flex-row  items-center ">
+   
+   <div className=" w-full  overflow-hidden h-full  flex-col flex lg:flex-row  items-center ">
     <div className=" container w-[90%] md:w-[100%]  z-30 pt-20 pl-[20px] pr-[20px] lg:pl-[460px] lg:pr-[200px] text-white">
       <section id="home" className="flex flex-col gap-20 md:gap-25 lg:gap-25">
         {/* home sec */}
@@ -104,56 +104,56 @@ export default function Home() {
            transition={{ duration: 1 }}
            viewport={{ once: true, amount: 0.2 }}
           className="lg:px-15 gap-x-3 gap-y-8  grid grid-cols-12  ">
-            <div ref={ref} className="bg-[#111111] p-5  my-swhover duration-500   text-center rounded-3xl col-span-4 md:col-span-3  lg:col-span-3 backdrop-blur-[36px]">
+            <div ref={ref} className="bg-[#111111] p-5  my-swhover duration-500   text-center rounded-3xl col-span-4 md:col-span-3   backdrop-blur-[36px]">
               <p className=" text-[16px] md:text-[18px] lg:text-[18px] text-[#cac8c8]   ">Html & Css</p>
               {inView && <CountUp className="text-[40px] md:text-[60px] lg:text-[60px] font-medium  " end={95} duration={3} />}%
             </div>
 
-            <div className="bg-[#111111] p-5 my-swhover duration-500  rounded-3xl text-center  col-span-4 md:col-span-3  lg:col-span-3   backdrop-blur-[36px]">
+            <div className="bg-[#111111] p-5 my-swhover duration-500  rounded-3xl text-center  col-span-4 md:col-span-3     backdrop-blur-[36px]">
               <p className="text-[16px] md:text-[18px] lg:text-[18px] text-[#cac8c8]  ">JavaScript</p>
               {inView && <CountUp className="text-[40px] md:text-[60px] lg:text-[60px] font-medium  " end={90} duration={3} />}%
             </div>
 
-            <div className="bg-[#111111] p-5 my-swhover duration-500  rounded-3xl text-center  col-span-4 md:col-span-3  lg:col-span-3   backdrop-blur-[36px]">
+            <div className="bg-[#111111] p-5 my-swhover duration-500  rounded-3xl text-center  col-span-4 md:col-span-3    backdrop-blur-[36px]">
               <p className="text-[16px] md:text-[18px] lg:text-[18px] text-[#cac8c8]  ">TypeScript</p>
               {inView && <CountUp className="text-[40px] md:text-[60px] lg:text-[60px] font-medium  " end={80} duration={3} />}%
             </div>
 
-            <div className="bg-[#111111] p-5 my-swhover duration-500  rounded-3xl text-center  col-span-4 md:col-span-3  lg:col-span-3   backdrop-blur-[36px]">
+            <div className="bg-[#111111] p-5 my-swhover duration-500  rounded-3xl text-center  col-span-4 md:col-span-3     backdrop-blur-[36px]">
               <p className="text-[16px] md:text-[18px] lg:text-[18px] text-[#cac8c8]  ">React</p>
               {inView && <CountUp className="text-[40px] md:text-[60px] lg:text-[60px] font-medium  " end={85} duration={3} />}%
             </div>
 
-            <div className="bg-[#111111] p-5 my-swhover duration-500  rounded-3xl text-center  col-span-4 md:col-span-3  lg:col-span-3   backdrop-blur-[36px]">
+            <div className="bg-[#111111] p-5 my-swhover duration-500  rounded-3xl text-center  col-span-4 md:col-span-3    backdrop-blur-[36px]">
               <p className="text-[16px] md:text-[18px] lg:text-[18px] text-[#cac8c8]  ">Next.Js</p>
               {inView && <CountUp className="text-[40px] md:text-[60px] lg:text-[60px] font-medium  " end={89} duration={3} />}%
             </div>
 
-            <div className="bg-[#111111] p-5 my-swhover duration-500  rounded-3xl text-center  col-span-4 md:col-span-3  lg:col-span-3   backdrop-blur-[36px]">
+            <div className="bg-[#111111] p-5 my-swhover duration-500  rounded-3xl text-center  col-span-4 md:col-span-3     backdrop-blur-[36px]">
               <p className="text-[16px] md:text-[18px] lg:text-[18px] text-[#cac8c8]  text-center">Tailwind CSS</p>
               {inView && <CountUp className="text-[40px] md:text-[60px] lg:text-[60px] font-medium  " end={90} duration={3} />}%
             </div>
-            <div className="bg-[#111111] p-5 my-swhover duration-500  rounded-3xl text-center  col-span-4 md:col-span-3  lg:col-span-3   backdrop-blur-[36px]">
+            <div className="bg-[#111111] p-5 my-swhover duration-500  rounded-3xl text-center  col-span-4 md:col-span-3     backdrop-blur-[36px]">
               <p className="text-[16px] md:text-[18px] lg:text-[18px] text-[#cac8c8]  text-center">Bootstrap</p>
               {inView && <CountUp className=" text-[40px] md:text-[60px] lg:text-[60px] font-medium  " end={90} duration={3} />}%
             </div>
-            <div className="bg-[#111111] p-5 my-swhover duration-500  rounded-3xl text-center  col-span-4 md:col-span-3  lg:col-span-3   backdrop-blur-[36px]">
+            <div className="bg-[#111111] p-5 my-swhover duration-500  rounded-3xl text-center  col-span-4 md:col-span-3    backdrop-blur-[36px]">
               <p className="text-[16px] md:text-[18px] lg:text-[18px] text-[#cac8c8]  text-center">Git/GitHub</p>
               {inView && <CountUp className="text-[40px] md:text-[60px] lg:text-[60px] font-medium  " end={80} duration={3} />}%
             </div>
-            <div className="bg-[#111111] py-5 px-2 md:p-5 lg:p-5 my-swhover duration-500  rounded-3xl text-center  col-span-4 md:col-span-3  lg:col-span-3   backdrop-blur-[36px]">
+            <div className="bg-[#111111] py-5 px-2 md:p-5 lg:p-5 my-swhover duration-500  rounded-3xl text-center  col-span-4 md:col-span-3     backdrop-blur-[36px]">
               <p className=" lg:text-[18px] md:text-[16px] text-[#cac8c8]  text-center">Framer Motion</p>
               {inView && <CountUp className="text-[40px] md:text-[60px] lg:text-[60px] font-medium  " end={90} duration={3} />}%
             </div>
-            <div className="bg-[#111111] p-5 my-swhover duration-500  rounded-3xl text-center  col-span-4 md:col-span-3  lg:col-span-3   backdrop-blur-[36px]">
+            <div className="bg-[#111111] p-5 my-swhover duration-500  rounded-3xl text-center  col-span-4 md:col-span-3    backdrop-blur-[36px]">
               <p className="text-[18px] text-[#cac8c8]  text-center">Postman</p>
               {inView && <CountUp className="text-[40px] md:text-[60px] lg:text-[60px] font-medium  " end={85} duration={3} />}%
             </div>
-            <div className="bg-[#111111] py-5 px-1 md:p-5 lg:p-5 my-swhover duration-500  rounded-3xl text-center  col-span-4 md:col-span-3  lg:col-span-3   backdrop-blur-[36px]">
+            <div className="bg-[#111111] py-5 px-1 md:p-5 lg:p-5 my-swhover duration-500  rounded-3xl text-center  col-span-4 md:col-span-3    backdrop-blur-[36px]">
               <p className="lg:text-[18px] md:text-[16px] text-[#cac8c8]  text-center">TanStack Query</p>
               {inView && <CountUp className="text-[40px] md:text-[60px] lg:text-[60px] font-medium  " end={90} duration={3} />}%
             </div>
-            <div className="bg-[#111111] p-5 my-swhover duration-500  rounded-3xl text-center  col-span-4 md:col-span-3  lg:col-span-3   backdrop-blur-[36px]">
+            <div className="bg-[#111111] p-5 my-swhover duration-500  rounded-3xl text-center  col-span-4 md:col-span-3    backdrop-blur-[36px]">
               <p className="text-[16px] md:text-[18px] lg:text-[18px] text-[#cac8c8]  text-center">NPM</p>
               {inView && <CountUp className="text-[40px] md:text-[60px] lg:text-[60px] font-medium  " end={90} duration={3} />}%
             </div>
@@ -174,23 +174,23 @@ export default function Home() {
         transition={{ duration: 1 }}
         viewport={{ once: true, amount: 0.2 }}
         className="grid grid-cols-12  gap-y-4 items-center    gap-x-2">
-          <p className="bg-[#25252580] text-center col-span-4 md:col-span-2  lg:col-span-2 hover:shadow-[inset_0px_0px_12px_rgba(142,142,142,0.53)] duration-500 p-1  rounded-2xl">React Router</p>
-          <p className="bg-[#25252580] text-center col-span-4 md:col-span-2  lg:col-span-2 hover:shadow-[inset_0px_0px_12px_rgba(142,142,142,0.53)] duration-500  p-1 rounded-2xl">React Hooks</p>
-          <p className="bg-[#25252580] text-center col-span-4 md:col-span-2  lg:col-span-2 hover:shadow-[inset_0px_0px_12px_rgba(142,142,142,0.53)] duration-500  p-1 rounded-2xl">Context API</p>
-          <p className="bg-[#25252580] text-center col-span-4 md:col-span-2  lg:col-span-2 hover:shadow-[inset_0px_0px_12px_rgba(142,142,142,0.53)] duration-500  p-1 rounded-2xl">SSR</p>
-          <p className="bg-[#25252580] text-center col-span-4 md:col-span-2  lg:col-span-2 hover:shadow-[inset_0px_0px_12px_rgba(142,142,142,0.53)] duration-500  p-1 rounded-2xl">SSG</p>
-          <p className="bg-[#25252580] text-center col-span-4 md:col-span-2  lg:col-span-2 hover:shadow-[inset_0px_0px_12px_rgba(142,142,142,0.53)] duration-500  p-1 rounded-2xl">Middleware</p>
-          <p className="bg-[#25252580] text-center  col-span-4 md:col-span-2  lg:col-span-2 hover:shadow-[inset_0px_0px_12px_rgba(142,142,142,0.53)] duration-500 lg:p-1 py-[5.8px] px-1 text-[14px] lg:text-[16px]  rounded-2xl">Responsive Design</p>
-          <p className="bg-[#25252580] text-center col-span-4 md:col-span-2  lg:col-span-2 hover:shadow-[inset_0px_0px_12px_rgba(142,142,142,0.53)] duration-500  p-1 rounded-2xl">Flexbox</p>
-          <p className="bg-[#25252580] text-center col-span-4 md:col-span-2  lg:col-span-2 hover:shadow-[inset_0px_0px_12px_rgba(142,142,142,0.53)] duration-500  p-1 rounded-2xl">Grid</p>
-          <p className="bg-[#25252580] text-center col-span-4 md:col-span-2  lg:col-span-2 hover:shadow-[inset_0px_0px_12px_rgba(142,142,142,0.53)] duration-500  p-1 rounded-2xl">Media Queries</p>
-          <p className="bg-[#25252580] text-center col-span-4 md:col-span-2  lg:col-span-2 hover:shadow-[inset_0px_0px_12px_rgba(142,142,142,0.53)] duration-500  p-1 rounded-2xl">CSS Animations</p>
-          <p className="bg-[#25252580] text-center col-span-4 md:col-span-2  lg:col-span-2 hover:shadow-[inset_0px_0px_12px_rgba(142,142,142,0.53)] duration-500     lg:p-1 py-[5.8px] px-1 text-[14px] lg:text-[16px] rounded-2xl">React Hook Form</p>
-          <p className="bg-[#25252580] text-center col-span-4 md:col-span-2  lg:col-span-2 hover:shadow-[inset_0px_0px_12px_rgba(142,142,142,0.53)] duration-500  p-1 rounded-2xl">Zod</p>
-          <p className="bg-[#25252580] text-center col-span-4 md:col-span-2  lg:col-span-2 hover:shadow-[inset_0px_0px_12px_rgba(142,142,142,0.53)] duration-500  p-1 rounded-2xl">Axios</p>
-          <p className="bg-[#25252580] text-center col-span-4 md:col-span-2  lg:col-span-2 hover:shadow-[inset_0px_0px_12px_rgba(142,142,142,0.53)] duration-500  p-1 rounded-2xl">Fetch</p>
-          <p className="bg-[#25252580] text-center col-span-4 md:col-span-2  lg:col-span-2 hover:shadow-[inset_0px_0px_12px_rgba(142,142,142,0.53)] duration-500   lg:p-1 py-[5.8px] px-1 text-[14px] lg:text-[16px] rounded-2xl">Dynamic Routing</p>
-          <p className="bg-[#25252580] text-center col-span-4 md:col-span-2  lg:col-span-2 hover:shadow-[inset_0px_0px_12px_rgba(142,142,142,0.53)] duration-500  p-1 rounded-2xl">SEO (Next.js)</p>
+          <p className="bg-[#25252580] text-center col-span-4 md:col-span-2  hover:shadow-[inset_0px_0px_12px_rgba(142,142,142,0.53)] duration-500 p-1  rounded-2xl">React Router</p>
+          <p className="bg-[#25252580] text-center col-span-4 md:col-span-2   hover:shadow-[inset_0px_0px_12px_rgba(142,142,142,0.53)] duration-500  p-1 rounded-2xl">React Hooks</p>
+          <p className="bg-[#25252580] text-center col-span-4 md:col-span-2   hover:shadow-[inset_0px_0px_12px_rgba(142,142,142,0.53)] duration-500  p-1 rounded-2xl">Context API</p>
+          <p className="bg-[#25252580] text-center col-span-4 md:col-span-2   hover:shadow-[inset_0px_0px_12px_rgba(142,142,142,0.53)] duration-500  p-1 rounded-2xl">SSR</p>
+          <p className="bg-[#25252580] text-center col-span-4 md:col-span-2   hover:shadow-[inset_0px_0px_12px_rgba(142,142,142,0.53)] duration-500  p-1 rounded-2xl">SSG</p>
+          <p className="bg-[#25252580] text-center col-span-4 md:col-span-2   hover:shadow-[inset_0px_0px_12px_rgba(142,142,142,0.53)] duration-500  p-1 rounded-2xl">Middleware</p>
+          <p className="bg-[#25252580] text-center  col-span-4 md:col-span-2   hover:shadow-[inset_0px_0px_12px_rgba(142,142,142,0.53)] duration-500 lg:p-1 py-[5.8px] px-1 text-[14px] lg:text-[16px]  rounded-2xl">Responsive Design</p>
+          <p className="bg-[#25252580] text-center col-span-4 md:col-span-2   hover:shadow-[inset_0px_0px_12px_rgba(142,142,142,0.53)] duration-500  p-1 rounded-2xl">Flexbox</p>
+          <p className="bg-[#25252580] text-center col-span-4 md:col-span-2   hover:shadow-[inset_0px_0px_12px_rgba(142,142,142,0.53)] duration-500  p-1 rounded-2xl">Grid</p>
+          <p className="bg-[#25252580] text-center col-span-4 md:col-span-2   hover:shadow-[inset_0px_0px_12px_rgba(142,142,142,0.53)] duration-500  p-1 rounded-2xl">Media Queries</p>
+          <p className="bg-[#25252580] text-center col-span-4 md:col-span-2   hover:shadow-[inset_0px_0px_12px_rgba(142,142,142,0.53)] duration-500  p-1 rounded-2xl">CSS Animations</p>
+          <p className="bg-[#25252580] text-center col-span-4 md:col-span-2   hover:shadow-[inset_0px_0px_12px_rgba(142,142,142,0.53)] duration-500     lg:p-1 py-[5.8px] px-1 text-[14px] lg:text-[16px] rounded-2xl">React Hook Form</p>
+          <p className="bg-[#25252580] text-center col-span-4 md:col-span-2   hover:shadow-[inset_0px_0px_12px_rgba(142,142,142,0.53)] duration-500  p-1 rounded-2xl">Zod</p>
+          <p className="bg-[#25252580] text-center col-span-4 md:col-span-2   hover:shadow-[inset_0px_0px_12px_rgba(142,142,142,0.53)] duration-500  p-1 rounded-2xl">Axios</p>
+          <p className="bg-[#25252580] text-center col-span-4 md:col-span-2   hover:shadow-[inset_0px_0px_12px_rgba(142,142,142,0.53)] duration-500  p-1 rounded-2xl">Fetch</p>
+          <p className="bg-[#25252580] text-center col-span-4 md:col-span-2   hover:shadow-[inset_0px_0px_12px_rgba(142,142,142,0.53)] duration-500   lg:p-1 py-[5.8px] px-1 text-[14px] lg:text-[16px] rounded-2xl">Dynamic Routing</p>
+          <p className="bg-[#25252580] text-center col-span-4 md:col-span-2   hover:shadow-[inset_0px_0px_12px_rgba(142,142,142,0.53)] duration-500  p-1 rounded-2xl">SEO (Next.js)</p>
         </motion.div>
         </div>
         

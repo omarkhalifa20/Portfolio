@@ -46,7 +46,7 @@ export default function NavbarMain() {
     transition={{ duration: 1.2 }}
     className='container mx-auto flex justify-center fixed translate-x-[-50%] top-5 left-[50%] items-center z-[999]   lg:translate-x-[0] lg:left-[94.2%] h-fit bg-[#ffffff1a] backdrop-blur-[24px] w-fit p-2 lg:fixed lg:right-6 lg:top-[50%] rounded-4xl lg:translate-y-[-50%] lg:bottom-0 '>
     <NavigationMenu className=' mx-auto'>
-     <NavigationMenuList className='flex  lg:flex-col gap-7 md:gap-12 lg:gap-15 text-white'>
+     <NavigationMenuList className='flex  lg:flex-col gap-5 md:gap-12 lg:gap-15 text-white'>
      <NavigationMenuItem className={activeSection === "home" ? "text-white cursor-pointer bg-[#ffffff3b] p-3 rounded-full" : "cursor-pointer hover:text-white duration-500 hover:bg-[#ffffff3b] p-3 rounded-full "} onClick={() => handleScroll("home")}>
      <House />
     </NavigationMenuItem>
