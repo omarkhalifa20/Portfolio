@@ -19,7 +19,7 @@ export default function Home() {
    <>
    <video className="top-0 bottom-0 left-0 right-0 w-[100%] h-[100%] object-cover   fixed z-[-15] brightness-30" src="/MainVid.webm" muted autoPlay loop></video>
    
-   <div className=" w-full h-full flex-col flex lg:flex-row  items-center ">
+   <div className=" w-full overflow-hidden h-full flex-col flex lg:flex-row  items-center ">
     <div className=" container w-[90%] md:w-[100%]  z-30 pt-20 pl-[20px] pr-[20px] lg:pl-[460px] lg:pr-[200px] text-white">
       <section id="home" className="flex flex-col gap-20 md:gap-25 lg:gap-25">
         {/* home sec */}
