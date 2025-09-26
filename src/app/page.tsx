@@ -212,13 +212,18 @@ export default function Home() {
             {/* mob-sec */}
                <div className=" lg:hidden flex flex-col gap-10 justify-center ">
           
-          <div className="card2  mx-auto lg:hidden">
+          <motion.div 
+          initial={{ opacity: 0, y: 80 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1.5 }}
+          viewport={{ once: true, amount: 0.2 }}
+          className="card2  mx-auto lg:hidden">
             <div className="btn1" />
             <div className="btn2" />
              <div className="btn3" />
              <div className="btn4" />
                <div className="card-int shadow-[inset_0px_0px_15px_rgba(142,142,142,0.53)]">
-              <a className=" absolute  bg-[#00000080] left-[50%] py-2 StoryScript translate-x-[-50%] text-[18px] text-center w-[85%] backdrop-blur-[16px] bottom-5 rounded-xl " href="https://omar-wheat.vercel.app/" >Vist My Site</a>
+              <a className=" absolute  bg-[#00000080] left-[50%] py-2 StoryScript translate-x-[-50%] border text-[18px] text-center w-[85%] backdrop-blur-[16px] bottom-5 rounded-xl " href="https://omar-wheat.vercel.app/" >Vist My Site</a>
             </div>
               <div className="top ">
              <div className="camera">
@@ -226,15 +231,20 @@ export default function Home() {
             </div>
              <div className="speaker" />
              </div>
-              </div>
+              </motion.div>
               
-              <div className="card2 mx-auto lg:hidden">
+              <motion.div
+              initial={{ opacity: 0, x: 80 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 1.5 }}
+              viewport={{ once: true, amount: 0.2 }}
+              className="card2 mx-auto lg:hidden">
             <div className="btn1" />
             <div className="btn2" />
              <div className="btn3" />
              <div className="btn4" />
                <div className="card-int2 shadow-[inset_0px_0px_15px_rgba(142,142,142,0.53)]">
-              <a className=" absolute bg-[#00000080] left-[50%] py-2 StoryScript translate-x-[-50%] text-[18px] text-center w-[85%] backdrop-blur-[16px] bottom-5 rounded-xl " href="https://omarbook.vercel.app/" >Vist My Site</a>
+              <a className=" absolute bg-[#00000080] left-[50%] py-2 StoryScript translate-x-[-50%] border  text-[18px] text-center w-[85%] backdrop-blur-[16px] bottom-5 rounded-xl " href="https://omarbook.vercel.app/" >Vist My Site</a>
             </div>
               <div className="top">
              <div className="camera">
@@ -242,15 +252,20 @@ export default function Home() {
             </div>
              <div className="speaker" />
              </div>
-              </div>
+              </motion.div>
 
-              <div className="card2 mx-auto lg:hidden">
+              <motion.div
+              initial={{ opacity: 0, y: 80 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1.5 }}
+              viewport={{ once: true, amount: 0.2 }}
+              className="card2 mx-auto lg:hidden">
             <div className="btn1" />
             <div className="btn2" />
              <div className="btn3" />
              <div className="btn4" />
                <div className="card-int3 shadow-[inset_0px_0px_15px_rgba(142,142,142,0.53)]">
-              <a className=" absolute bg-[#00000080] left-[50%] py-2 StoryScript translate-x-[-50%] text-[18px] text-center w-[85%] backdrop-blur-[16px] bottom-5 rounded-xl " href="https://www.greeninjoy.com/" >Vist My Site</a>
+              <a className=" absolute bg-[#00000080] left-[50%] py-2 StoryScript translate-x-[-50%] border text-[18px] text-center w-[85%] backdrop-blur-[16px] bottom-5 rounded-xl " href="https://www.greeninjoy.com/" >Vist My Site</a>
             </div>
               <div className="top">
              <div className="camera">
@@ -258,15 +273,19 @@ export default function Home() {
             </div>
              <div className="speaker" />
              </div>
-              </div>
+              </motion.div>
  
            </div>
  
  
            {/* mob-sec */}
 
-          <div className=" hidden lg:flex flex-col gap-18">
-            {/* pc-sec */}
+          <div 
+
+
+          // pc-sec
+          className=" hidden lg:flex flex-col gap-18">
+            
             <motion.div 
             initial={{ opacity: 0, y: 80 }}
             whileInView={{ opacity: 1, y: 0 }}
