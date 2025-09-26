@@ -4,6 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import { motion } from "framer-motion";
+import { IoLogoWhatsapp } from 'react-icons/io5'
 
 export default function SideSecComp() {
   return (
@@ -32,13 +33,13 @@ export default function SideSecComp() {
     </div>
     <div className='flex gap-5 mb-12 items-center justify-center'>
       <div className='text-white hover:bg-white flex items-center justify-center hover:text-black duration-400  icon-sw backdrop-blur-[6px] bg-[#ffffff1a] rounded-full p-[10px]'>
-      <Linkedin className='' />
+      <Link href='https://www.linkedin.com/in/omar-khalifa-a79162222/'><Linkedin className='' /></Link> 
       </div>
       <div className='text-white icon-sw flex items-center justify-center hover:bg-white hover:text-black duration-400 backdrop-blur-[6px] bg-[#ffffff1a] rounded-full p-[10px] '>
-      <PhoneCall />
+      <Link href='https://api.whatsapp.com/send?phone=201204302212'><IoLogoWhatsapp  size={26} /></Link>
       </div>
       <div className='text-white icon-sw flex items-center justify-center hover:bg-white hover:text-black duration-400 backdrop-blur-[6px] bg-[#ffffff1a] rounded-full p-[10px]'>
-      <Github />
+      <Link href='https://github.com/omarkhalifa20'><Github /></Link>
       </div>
     </div>
     

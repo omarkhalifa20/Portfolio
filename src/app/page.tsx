@@ -20,7 +20,7 @@ export default function Home() {
    <video className="top-0 hidden lg:block  bottom-0 left-0 right-0 w-[100%] h-[100%] object-cover   fixed z-[-15] brightness-30" src="/MainVid.webm" muted autoPlay loop></video>
    
    <div className=" w-full  overflow-hidden h-full  flex-col flex lg:flex-row  items-center ">
-    <div className=" container w-[90%] md:w-[100%]  z-30 pt-20 pl-[20px] pr-[20px] lg:pl-[460px] lg:pr-[200px] text-white">
+    <div className=" container w-[95%] md:w-[100%]  z-30 pt-20 pl-[10px] pr-[10px] lg:pl-[460px] lg:pr-[200px] text-white">
       <section id="home" className="flex flex-col gap-20 md:gap-25 lg:gap-25">
         {/* home sec */}
       <motion.p 
@@ -104,56 +104,56 @@ export default function Home() {
            transition={{ duration: 1 }}
            viewport={{ once: true, amount: 0.2 }}
           className="lg:px-15 gap-x-3 gap-y-8  grid grid-cols-12  ">
-            <div ref={ref} className="bg-[#111111] p-5  my-swhover duration-500   text-center rounded-3xl col-span-4 md:col-span-3   backdrop-blur-[36px]">
-              <p className=" text-[16px] md:text-[18px] lg:text-[18px] text-[#cac8c8]   ">Html & Css</p>
+            <div ref={ref} className="bg-[#111111] p-3 md:p-5  my-swhover duration-500   text-center rounded-3xl col-span-4 md:col-span-3   backdrop-blur-[36px]">
+              <p className=" text-[15px] md:text-[18px] lg:text-[18px] text-[#cac8c8]   ">Html & Css</p>
               {inView && <CountUp className="text-[40px] md:text-[60px] lg:text-[60px] font-medium  " end={95} duration={3} />}%
             </div>
 
-            <div className="bg-[#111111] p-5 my-swhover duration-500  rounded-3xl text-center  col-span-4 md:col-span-3     backdrop-blur-[36px]">
+            <div className="bg-[#111111] p-3 md:p-5  my-swhover duration-500  rounded-3xl text-center  col-span-4 md:col-span-3     backdrop-blur-[36px]">
               <p className="text-[16px] md:text-[18px] lg:text-[18px] text-[#cac8c8]  ">JavaScript</p>
               {inView && <CountUp className="text-[40px] md:text-[60px] lg:text-[60px] font-medium  " end={90} duration={3} />}%
             </div>
 
-            <div className="bg-[#111111] p-5 my-swhover duration-500  rounded-3xl text-center  col-span-4 md:col-span-3    backdrop-blur-[36px]">
+            <div className="bg-[#111111] p-3 md:p-5  my-swhover duration-500  rounded-3xl text-center  col-span-4 md:col-span-3    backdrop-blur-[36px]">
               <p className="text-[16px] md:text-[18px] lg:text-[18px] text-[#cac8c8]  ">TypeScript</p>
               {inView && <CountUp className="text-[40px] md:text-[60px] lg:text-[60px] font-medium  " end={80} duration={3} />}%
             </div>
 
-            <div className="bg-[#111111] p-5 my-swhover duration-500  rounded-3xl text-center  col-span-4 md:col-span-3     backdrop-blur-[36px]">
+            <div className="bg-[#111111] p-3 md:p-5  my-swhover duration-500  rounded-3xl text-center  col-span-4 md:col-span-3     backdrop-blur-[36px]">
               <p className="text-[16px] md:text-[18px] lg:text-[18px] text-[#cac8c8]  ">React</p>
               {inView && <CountUp className="text-[40px] md:text-[60px] lg:text-[60px] font-medium  " end={85} duration={3} />}%
             </div>
 
-            <div className="bg-[#111111] p-5 my-swhover duration-500  rounded-3xl text-center  col-span-4 md:col-span-3    backdrop-blur-[36px]">
+            <div className="bg-[#111111] p-3 md:p-5  my-swhover duration-500  rounded-3xl text-center  col-span-4 md:col-span-3    backdrop-blur-[36px]">
               <p className="text-[16px] md:text-[18px] lg:text-[18px] text-[#cac8c8]  ">Next.Js</p>
               {inView && <CountUp className="text-[40px] md:text-[60px] lg:text-[60px] font-medium  " end={89} duration={3} />}%
             </div>
 
-            <div className="bg-[#111111] p-5 my-swhover duration-500  rounded-3xl text-center  col-span-4 md:col-span-3     backdrop-blur-[36px]">
-              <p className="text-[16px] md:text-[18px] lg:text-[18px] text-[#cac8c8]  text-center">Tailwind CSS</p>
+            <div className="bg-[#111111] p-3 md:p-5  my-swhover duration-500  rounded-3xl text-center  col-span-4 md:col-span-3     backdrop-blur-[36px]">
+              <p className="text-[14px] md:text-[18px] lg:text-[18px] text-[#cac8c8]  text-center">Tailwind CSS</p>
               {inView && <CountUp className="text-[40px] md:text-[60px] lg:text-[60px] font-medium  " end={90} duration={3} />}%
             </div>
-            <div className="bg-[#111111] p-5 my-swhover duration-500  rounded-3xl text-center  col-span-4 md:col-span-3     backdrop-blur-[36px]">
+            <div className="bg-[#111111] p-3 md:p-5  my-swhover duration-500  rounded-3xl text-center  col-span-4 md:col-span-3     backdrop-blur-[36px]">
               <p className="text-[16px] md:text-[18px] lg:text-[18px] text-[#cac8c8]  text-center">Bootstrap</p>
               {inView && <CountUp className=" text-[40px] md:text-[60px] lg:text-[60px] font-medium  " end={90} duration={3} />}%
             </div>
-            <div className="bg-[#111111] p-5 my-swhover duration-500  rounded-3xl text-center  col-span-4 md:col-span-3    backdrop-blur-[36px]">
+            <div className="bg-[#111111] p-3 md:p-5  my-swhover duration-500  rounded-3xl text-center  col-span-4 md:col-span-3    backdrop-blur-[36px]">
               <p className="text-[16px] md:text-[18px] lg:text-[18px] text-[#cac8c8]  text-center">Git/GitHub</p>
               {inView && <CountUp className="text-[40px] md:text-[60px] lg:text-[60px] font-medium  " end={80} duration={3} />}%
             </div>
-            <div className="bg-[#111111] py-5 px-2 md:p-5 lg:p-5 my-swhover duration-500  rounded-3xl text-center  col-span-4 md:col-span-3     backdrop-blur-[36px]">
-              <p className=" lg:text-[18px] md:text-[16px] text-[#cac8c8]  text-center">Framer Motion</p>
+            <div className="bg-[#111111] py-5 px-1 md:p-5 lg:p-5 my-swhover duration-500  rounded-3xl text-center  col-span-4 md:col-span-3     backdrop-blur-[36px]">
+              <p className=" lg:text-[18px] md:text-[16px] text-[14px] text-[#cac8c8]  text-center">Framer Motion</p>
               {inView && <CountUp className="text-[40px] md:text-[60px] lg:text-[60px] font-medium  " end={90} duration={3} />}%
             </div>
-            <div className="bg-[#111111] p-5 my-swhover duration-500  rounded-3xl text-center  col-span-4 md:col-span-3    backdrop-blur-[36px]">
+            <div className="bg-[#111111] p-3 md:p-5  my-swhover duration-500  rounded-3xl text-center  col-span-4 md:col-span-3    backdrop-blur-[36px]">
               <p className="text-[18px] text-[#cac8c8]  text-center">Postman</p>
               {inView && <CountUp className="text-[40px] md:text-[60px] lg:text-[60px] font-medium  " end={85} duration={3} />}%
             </div>
             <div className="bg-[#111111] py-5 px-1 md:p-5 lg:p-5 my-swhover duration-500  rounded-3xl text-center  col-span-4 md:col-span-3    backdrop-blur-[36px]">
-              <p className="lg:text-[18px] md:text-[16px] text-[#cac8c8]  text-center">TanStack Query</p>
+              <p className="lg:text-[18px] md:text-[16px] text-[14px] text-[#cac8c8]  text-center">TanStack Query</p>
               {inView && <CountUp className="text-[40px] md:text-[60px] lg:text-[60px] font-medium  " end={90} duration={3} />}%
             </div>
-            <div className="bg-[#111111] p-5 my-swhover duration-500  rounded-3xl text-center  col-span-4 md:col-span-3    backdrop-blur-[36px]">
+            <div className="bg-[#111111] p-3 md:p-5  my-swhover duration-500  rounded-3xl text-center  col-span-4 md:col-span-3    backdrop-blur-[36px]">
               <p className="text-[16px] md:text-[18px] lg:text-[18px] text-[#cac8c8]  text-center">NPM</p>
               {inView && <CountUp className="text-[40px] md:text-[60px] lg:text-[60px] font-medium  " end={90} duration={3} />}%
             </div>
@@ -180,17 +180,16 @@ export default function Home() {
           <p className="bg-[#25252580] text-center col-span-4 md:col-span-2   hover:shadow-[inset_0px_0px_12px_rgba(142,142,142,0.53)] duration-500  p-1 rounded-2xl">SSR</p>
           <p className="bg-[#25252580] text-center col-span-4 md:col-span-2   hover:shadow-[inset_0px_0px_12px_rgba(142,142,142,0.53)] duration-500  p-1 rounded-2xl">SSG</p>
           <p className="bg-[#25252580] text-center col-span-4 md:col-span-2   hover:shadow-[inset_0px_0px_12px_rgba(142,142,142,0.53)] duration-500  p-1 rounded-2xl">Middleware</p>
-          <p className="bg-[#25252580] text-center  col-span-4 md:col-span-2   hover:shadow-[inset_0px_0px_12px_rgba(142,142,142,0.53)] duration-500 lg:p-1 py-[5.8px] px-1 text-[14px] lg:text-[16px]  rounded-2xl">Responsive Design</p>
           <p className="bg-[#25252580] text-center col-span-4 md:col-span-2   hover:shadow-[inset_0px_0px_12px_rgba(142,142,142,0.53)] duration-500  p-1 rounded-2xl">Flexbox</p>
           <p className="bg-[#25252580] text-center col-span-4 md:col-span-2   hover:shadow-[inset_0px_0px_12px_rgba(142,142,142,0.53)] duration-500  p-1 rounded-2xl">Grid</p>
           <p className="bg-[#25252580] text-center col-span-4 md:col-span-2   hover:shadow-[inset_0px_0px_12px_rgba(142,142,142,0.53)] duration-500  p-1 rounded-2xl">Media Queries</p>
-          <p className="bg-[#25252580] text-center col-span-4 md:col-span-2   hover:shadow-[inset_0px_0px_12px_rgba(142,142,142,0.53)] duration-500  p-1 rounded-2xl">CSS Animations</p>
-          <p className="bg-[#25252580] text-center col-span-4 md:col-span-2   hover:shadow-[inset_0px_0px_12px_rgba(142,142,142,0.53)] duration-500     lg:p-1 py-[5.8px] px-1 text-[14px] lg:text-[16px] rounded-2xl">React Hook Form</p>
           <p className="bg-[#25252580] text-center col-span-4 md:col-span-2   hover:shadow-[inset_0px_0px_12px_rgba(142,142,142,0.53)] duration-500  p-1 rounded-2xl">Zod</p>
           <p className="bg-[#25252580] text-center col-span-4 md:col-span-2   hover:shadow-[inset_0px_0px_12px_rgba(142,142,142,0.53)] duration-500  p-1 rounded-2xl">Axios</p>
           <p className="bg-[#25252580] text-center col-span-4 md:col-span-2   hover:shadow-[inset_0px_0px_12px_rgba(142,142,142,0.53)] duration-500  p-1 rounded-2xl">Fetch</p>
-          <p className="bg-[#25252580] text-center col-span-4 md:col-span-2   hover:shadow-[inset_0px_0px_12px_rgba(142,142,142,0.53)] duration-500   lg:p-1 py-[5.8px] px-1 text-[14px] lg:text-[16px] rounded-2xl">Dynamic Routing</p>
-          <p className="bg-[#25252580] text-center col-span-4 md:col-span-2   hover:shadow-[inset_0px_0px_12px_rgba(142,142,142,0.53)] duration-500  p-1 rounded-2xl">SEO (Next.js)</p>
+          <p className="bg-[#25252580] text-center  col-span-6 md:col-span-2   hover:shadow-[inset_0px_0px_12px_rgba(142,142,142,0.53)] duration-500 lg:p-1 py-[5.8px] px-1 text-[16px]  rounded-2xl">Responsive Design</p>
+          <p className="bg-[#25252580] text-center col-span-6 md:col-span-2   hover:shadow-[inset_0px_0px_12px_rgba(142,142,142,0.53)] duration-500  p-1 rounded-2xl">CSS Animations</p>
+          <p className="bg-[#25252580] text-center col-span-6 md:col-span-2   hover:shadow-[inset_0px_0px_12px_rgba(142,142,142,0.53)] duration-500  p-1 rounded-2xl">CSS Animations</p>
+          <p className="bg-[#25252580] text-center col-span-6 md:col-span-2   hover:shadow-[inset_0px_0px_12px_rgba(142,142,142,0.53)] duration-500     lg:p-1 py-[5.8px] px-1  text-[16px] rounded-2xl">React Hook Form</p>
         </motion.div>
         </div>
         
@@ -210,21 +209,77 @@ export default function Home() {
            
           </motion.div>
 
+            {/* mob-sec */}
+               <div className=" lg:hidden flex flex-col gap-10 justify-center ">
+          
+          <div className="card2  mx-auto lg:hidden">
+            <div className="btn1" />
+            <div className="btn2" />
+             <div className="btn3" />
+             <div className="btn4" />
+               <div className="card-int shadow-[inset_0px_0px_15px_rgba(142,142,142,0.53)]">
+              <a className=" absolute  bg-[#00000080] left-[50%] py-2 StoryScript translate-x-[-50%] text-[18px] text-center w-[85%] backdrop-blur-[16px] bottom-5 rounded-xl " href="https://omar-wheat.vercel.app/" >Vist My Site</a>
+            </div>
+              <div className="top ">
+             <div className="camera">
+              <div className="int" />
+            </div>
+             <div className="speaker" />
+             </div>
+              </div>
+              
+              <div className="card2 mx-auto lg:hidden">
+            <div className="btn1" />
+            <div className="btn2" />
+             <div className="btn3" />
+             <div className="btn4" />
+               <div className="card-int2 shadow-[inset_0px_0px_15px_rgba(142,142,142,0.53)]">
+              <a className=" absolute bg-[#00000080] left-[50%] py-2 StoryScript translate-x-[-50%] text-[18px] text-center w-[85%] backdrop-blur-[16px] bottom-5 rounded-xl " href="https://omarbook.vercel.app/" >Vist My Site</a>
+            </div>
+              <div className="top">
+             <div className="camera">
+              <div className="int" />
+            </div>
+             <div className="speaker" />
+             </div>
+              </div>
 
-          <div className="flex flex-col gap-18">
+              <div className="card2 mx-auto lg:hidden">
+            <div className="btn1" />
+            <div className="btn2" />
+             <div className="btn3" />
+             <div className="btn4" />
+               <div className="card-int3 shadow-[inset_0px_0px_15px_rgba(142,142,142,0.53)]">
+              <a className=" absolute bg-[#00000080] left-[50%] py-2 StoryScript translate-x-[-50%] text-[18px] text-center w-[85%] backdrop-blur-[16px] bottom-5 rounded-xl " href="https://www.greeninjoy.com/" >Vist My Site</a>
+            </div>
+              <div className="top">
+             <div className="camera">
+              <div className="int" />
+            </div>
+             <div className="speaker" />
+             </div>
+              </div>
+ 
+           </div>
+ 
+ 
+           {/* mob-sec */}
+
+          <div className=" hidden lg:flex flex-col gap-18">
+            {/* pc-sec */}
             <motion.div 
             initial={{ opacity: 0, y: 80 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1.5 }}
             viewport={{ once: true, amount: 0.2 }}
-            className=" relative project-parent overflow-hidden ">
+            className="  relative project-parent overflow-hidden ">
             <img className="rounded-3xl" src="/Omarike.webp" alt="Omarike" />
             <div   className="bg-[#00000080] bottom-1 project-child justify-between items-center flex px-3 py-1 md:py-3 md:px-8  lg:py-5 lg:px-10 rounded-xl md:rounded-4xl lg:rounded-4xl left-[50%] translate-x-[-50%] w-[95%] backdrop-blur-[16px] absolute duration-800 lg:bottom-[-180]">
             <div>
               <p className="font-normal text-[#BBBBBB] text-[8px] md:text-[18px] lg:text-[18px] ">React (Next.js) Project</p>
              <Link href='https://omar-wheat.vercel.app/' className="StoryScript hover:text-blue-500 duration-300 text-[16px] md:text-[30px] lg:text-[40px]">Omarike E - Commerce</Link>
              
-             <p className="bg-[#25252580] text-center hidden lg:block w-fit  hover:shadow-[inset_0px_0px_12px_rgba(142,142,142,0.53)] duration-500 py-1  px-5 rounded-2xl">Sep 2025</p>
+             <p className="bg-[#25252580] text-center  w-fit  hover:shadow-[inset_0px_0px_12px_rgba(142,142,142,0.53)] duration-500 py-1  px-5 rounded-2xl">Sep 2025</p>
             </div>
              
              
@@ -238,14 +293,14 @@ export default function Home() {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1.5 }}
           viewport={{ once: true, amount: 0.2 }}
-          className=" relative project-parent overflow-hidden ">
+          className="  relative project-parent overflow-hidden ">
             <img className="rounded-3xl" src="/OmarBook.webp" alt="OmarBook" />
             <div   className="bg-[#00000080] bottom-1 project-child justify-between items-center flex px-3 py-1 md:py-3 md:px-8  lg:py-5 lg:px-10 rounded-xl md:rounded-4xl lg:rounded-4xl left-[50%] translate-x-[-50%] w-[95%] backdrop-blur-[16px] absolute duration-800 lg:bottom-[-180]">
             <div>
               <p className="font-normal text-[#BBBBBB] text-[8px] md:text-[18px] lg:text-[18px] ">React Project</p>
              <Link href='https://omarbook.vercel.app/' className="StoryScript hover:text-blue-500 duration-300 text-[16px] md:text-[30px] lg:text-[40px]">OmarBook Social App</Link>
              
-             <p className="bg-[#25252580] hidden lg:block text-center w-fit  hover:shadow-[inset_0px_0px_12px_rgba(142,142,142,0.53)] duration-500 py-1  px-5 rounded-2xl">Sep 2025</p>
+             <p className="bg-[#25252580]  text-center w-fit  hover:shadow-[inset_0px_0px_12px_rgba(142,142,142,0.53)] duration-500 py-1  px-5 rounded-2xl">Sep 2025</p>
             </div>
              
              
@@ -260,14 +315,14 @@ export default function Home() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.5 }}
           viewport={{ once: true, amount: 0.2 }}
-          className=" relative project-parent overflow-hidden ">
+          className="  relative project-parent overflow-hidden ">
             <img className="rounded-3xl" src="/GreenInJoy.webp" alt="GreenInJoy" />
             <div   className="bg-[#00000080] bottom-1 project-child justify-between items-center flex px-3 py-1 md:py-3 md:px-8  lg:py-5 lg:px-10 rounded-xl md:rounded-4xl lg:rounded-4xl left-[50%] translate-x-[-50%] w-[95%] backdrop-blur-[16px] absolute duration-800 lg:bottom-[-180]">
             <div>
               <p className="font-normal text-[#BBBBBB] text-[8px] md:text-[18px] lg:text-[18px] ">Native JS</p>
              <Link href='https://www.greeninjoy.com/' className="StoryScript hover:text-blue-500 duration-300 text-[16px] md:text-[30px] lg:text-[40px]">Green In Joy Export Company </Link>
              
-             <p className="bg-[#25252580] hidden lg:block text-center w-fit  hover:shadow-[inset_0px_0px_12px_rgba(142,142,142,0.53)] duration-500 py-1  px-5 rounded-2xl">Sep 2025</p>
+             <p className="bg-[#25252580]  text-center w-fit  hover:shadow-[inset_0px_0px_12px_rgba(142,142,142,0.53)] duration-500 py-1  px-5 rounded-2xl">Sep 2025</p>
             </div>
              
              
@@ -276,7 +331,9 @@ export default function Home() {
             </div>
           </motion.div>
           </div>
-          
+          {/* pc-sec */}
+
+         
           
           
          </section>
@@ -296,7 +353,7 @@ export default function Home() {
          transition={{ duration: 1 }}
          viewport={{ once: true, amount: 0.2 }}
           className="grid gap-x-3 gap-y-5 grid-cols-12">
-         <div  className="bg-[#111111] py-7 md:px-[10px]  my-swhover duration-500   text-center rounded-3xl col-span-6  lg:col-span-4 backdrop-blur-[36px]">
+         <div  className="bg-[#111111] py-7 md:px-[10px]  my-swhover duration-500   text-center rounded-3xl col-span-12  lg:col-span-4 backdrop-blur-[36px]">
               <p className="text-[18px] md:text-[30px] text-[#cac8c8]   ">Responsive WebSites</p>
             </div>
             <div  className="bg-[#111111] py-7 px-[10px]  my-swhover duration-500   text-center rounded-3xl col-span-6  lg:col-span-4 backdrop-blur-[36px]">
@@ -325,9 +382,6 @@ export default function Home() {
             <div  className="bg-[#111111] py-7 px-[10px]  my-swhover duration-500   text-center rounded-3xl col-span-6  lg:col-span-4 backdrop-blur-[36px]">
               <p className="text-[18px] md:text-[30px] text-[#cac8c8]   ">Business Website</p>
             </div>
-            <div  className="bg-[#111111] py-7 px-[5px]  my-swhover duration-500   text-center rounded-3xl col-span-6  lg:col-span-4 backdrop-blur-[36px]">
-              <p className="text-[18px] md:text-[30px] text-[#cac8c8]   ">E-commerce Frontend</p>
-            </div>
             <div  className="bg-[#111111] py-7 px-[10px]  my-swhover duration-500   text-center rounded-3xl col-span-6  lg:col-span-4 backdrop-blur-[36px]">
               <p className="text-[18px] md:text-[30px] text-[#cac8c8]   ">SPA</p>
             </div>
@@ -336,6 +390,9 @@ export default function Home() {
             </div>
             <div  className="bg-[#111111] py-7 px-[10px]  my-swhover duration-500   text-center rounded-3xl col-span-6  lg:col-span-4 backdrop-blur-[36px]">
               <p className="text-[18px] md:text-[30px] text-[#cac8c8]   ">Admin Panel</p>
+            </div>
+            <div  className="bg-[#111111] py-7 px-[5px]  my-swhover duration-500   text-center rounded-3xl col-span-12  lg:col-span-4 backdrop-blur-[36px]">
+              <p className="text-[18px] md:text-[30px] text-[#cac8c8]   ">E-commerce Frontend</p>
             </div>
 
          </motion.div>
@@ -352,7 +409,7 @@ export default function Home() {
         transition={{ duration: 1 }}
         viewport={{ once: true, amount: 0.2 }}
         className="text-center StoryScript text-[35px] mb-10  ">Contact</motion.h3>
-        <div className="grid gap-5 grid-cols-12">
+        <div className="grid gap-2 md:gap-5 grid-cols-12">
          <motion.div  
          initial={{ opacity: 0, x: -100 }}
          whileInView={{ opacity: 1, x: 0 }}
@@ -361,7 +418,7 @@ export default function Home() {
          className="bg-[#111111] py-7 px-[10px] flex gap-y-5 flex-col justify-center items-center   my-sw  duration-500   text-center rounded-3xl  col-span-6 backdrop-blur-[36px]">
          <IoLogoWhatsapp className="text-green-600" size={70} />
               <p className="text-[30px] md:text-[40px] StoryScript text-green-600   ">Whats App</p>
-              <Link className="border border-green-600 w-[90%] text-green-600  text-[22px] rounded-xl my-swhover-wa py-2 " href='/'>Click Here</Link>
+              <a className="border border-green-600 w-[90%] text-green-600  text-[22px] rounded-xl my-swhover-wa py-2 " href='https://api.whatsapp.com/send?phone=201204302212'>Click Here</a>
 
             </motion.div> 
 
@@ -373,7 +430,7 @@ export default function Home() {
              className="bg-[#111111] py-7 px-[10px] flex gap-y-5 flex-col justify-center items-center   my-sw  duration-500   text-center rounded-3xl  col-span-6 backdrop-blur-[36px]">
             <BiLogoGmail className="" size={70} />
               <p className="text-[40px] StoryScript    ">Gmail</p>
-              <Link className="border  w-[90%]   text-[22px] rounded-xl my-swhover py-2 " href='/'>Click Here</Link>
+              <a className="border  w-[90%]   text-[22px] rounded-xl my-swhover py-2 " href='https://mail.google.com/mail/?view=cm&fs=1&to=omaromarb414@gmail.com'>Click Here</a>
 
             </motion.div>
 
@@ -385,7 +442,7 @@ export default function Home() {
             className="bg-[#111111] py-7 px-[10px] flex gap-y-5 flex-col justify-center items-center   my-sw  duration-500   text-center rounded-3xl  col-span-6 backdrop-blur-[36px]">
             <GrDocumentText className="text-yellow-500" size={70} />
               <p className="text-[40px] StoryScript text-yellow-500   ">Cv</p>
-              <Link className="border border-yellow-500 w-[90%] text-yellow-500  text-[22px] rounded-xl my-swhover-Cv py-2 " href='/'>Download</Link>
+              <a className="border border-yellow-500 w-[90%] text-yellow-500  text-[22px] rounded-xl my-swhover-Cv py-2 " href='https://drive.google.com/file/d/1LePtS3nL1Y4pIG__5_1-krGOImK6dSYU/view?usp=sharing'>View</a>
 
             </motion.div>
 
@@ -397,7 +454,7 @@ export default function Home() {
             className="bg-[#111111] py-7 px-[10px] flex gap-y-5 flex-col justify-center items-center   my-sw  duration-500   text-center rounded-3xl  col-span-6 backdrop-blur-[36px]">
             <Linkedin  className="text-blue-500" size={70} />
               <p className="text-[40px] StoryScript text-blue-500   ">Linkdin</p>
-              <Link className="border border-blue-500 w-[90%] text-blue-500  text-[22px] rounded-xl my-swhover-lik py-2 " href='/'>Click Here</Link>
+              <a className="border border-blue-500 w-[90%] text-blue-500  text-[22px] rounded-xl my-swhover-lik py-2 " href='https://www.linkedin.com/in/omar-khalifa-a79162222/'>Click Here</a>
 
             </motion.div>
 
