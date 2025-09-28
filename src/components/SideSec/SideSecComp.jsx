@@ -2,11 +2,32 @@
 import { Circle, Code, Github, Linkedin, PhoneCall } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { motion } from "framer-motion";
 import { IoLogoWhatsapp } from 'react-icons/io5'
 
 export default function SideSecComp() {
+const [activeSection, setActiveSection] = useState("home");
+  useEffect(() => {
+      const sections = document.querySelectorAll("section");
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              setActiveSection(entry.target.id);
+            }
+          });
+        },
+        { threshold: 0.3 } 
+      );
+  
+      sections.forEach((sec) => observer.observe(sec));
+      return () => sections.forEach((sec) => observer.unobserve(sec));
+    }, []);
+  
+    const handleScroll = (id) => {
+      document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+    };
   return (
     <>
     <motion.div 
@@ -43,7 +64,7 @@ export default function SideSecComp() {
       </div>
     </div>
     
-    <Link className='text-center w-[100%] py-3 shadow-[inset_0px_0px_12px_rgba(142,142,142,0.53)] hover:shadow-[inset_0px_0px_25px_rgba(142,142,142,0.53)] cursor-pointer    rounded-3xl border text-[18px] border-[#ffffff43] text-white' href='/'>Get Started</Link>
+    <button className='text-center w-[100%] py-3 shadow-[inset_0px_0px_12px_rgba(142,142,142,0.53)] hover:shadow-[inset_0px_0px_25px_rgba(142,142,142,0.53)] cursor-pointer    rounded-3xl border text-[18px] border-[#ffffff43] text-white' onClick={() => handleScroll("about")}>Get Started</button>
      
 
      </div>
