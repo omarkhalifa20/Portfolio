@@ -1,6 +1,7 @@
 import React from 'react'
 import CountUp from "react-countup";
-import { motion, useInView } from "framer-motion";
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 export default function AboutComp() {
     const { ref, inView } = useInView({

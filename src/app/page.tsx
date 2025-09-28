@@ -1,4 +1,3 @@
-
 "use client"
 
 import HomeComp from "@/components/Home/HomeComp";
