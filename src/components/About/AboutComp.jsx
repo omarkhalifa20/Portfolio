@@ -1,8 +1,12 @@
 import React from 'react'
 import CountUp from "react-countup";
-import { motion } from "framer-motion";
+import { motion, useInView } from "framer-motion";
 
 export default function AboutComp() {
+    const { ref, inView } = useInView({
+        triggerOnce: true, 
+        threshold: 0.2,    
+      });
   return (
     <>
     <section id="about" className="pb-4 mt-20">
