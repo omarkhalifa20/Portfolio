@@ -41,7 +41,7 @@ export default function HomeComp() {
         initial={{ opacity: 0, x: -120 }}
         animate={{ opacity: 1, x: 0 } }
         transition={{ duration: 1 }}
-         className="flex flex-col  text-center md:flex-row  justify-center gap-3 md:gap-7">
+         className="flex flex-col  text-center md:flex-row lg:flex-col xl:flex-row  justify-center gap-3 md:gap-7">
           <p className="bg-[#25252580] hover:shadow-[inset_0px_0px_12px_rgba(142,142,142,0.53)] duration-500 py-1 px-8 rounded-2xl">Html</p>
           <p className="bg-[#25252580] hover:shadow-[inset_0px_0px_12px_rgba(142,142,142,0.53)] duration-500 py-1 px-8 rounded-2xl">Css</p>
           <p className="bg-[#25252580] hover:shadow-[inset_0px_0px_12px_rgba(142,142,142,0.53)] duration-500 py-1 px-8 rounded-2xl">JavaScript</p>
